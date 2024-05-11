@@ -1,0 +1,445 @@
+/* 
+320px - 480px: dispositivos móveis;
+481px - 768px: tablets;
+769px - 1024px: telas pequenas, laptops;
+1025px - 1200px: desktops;
+1201px - 1600px: telas grandes;
++1601px: TVs e tela grandes.
+*/
+
+/*#region 769px - 1024px: telas pequenas, laptops */
+@media screen and (max-width: 769px) {
+    .home {
+        background-image: url('../img/fundo.png');
+        background-size: cover;
+        background-position: 15%;
+        background-attachment: fixed;
+        padding: 350px 0;
+    }
+
+    .menu {
+        width: 70px;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .logo {
+        width: auto;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .menuLink span {
+        display: none;
+    }
+
+    .menuLink li {
+        margin-bottom: 20px;
+        height: 20px;
+        line-height: 40px;
+        top: 20px;
+    }
+
+    .menuLink li:hover {
+        background-color: #9400D3;
+        border-radius: 10px;
+        transition: all .5s;
+    }
+
+    .menuLink li a {
+        color: #FF1493;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .menuLink li a:hover {
+        color: #0a0113;
+        transition: all .5s;
+    }
+
+    .menuLink li a i {
+        flex-basis: 30%;
+        font-size: 20px;
+    }
+
+    .user {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .user a i {
+        width: 90%;
+        border-radius: 150px;
+        font-size: 25px;
+        padding: 80px;
+    }
+
+    .homeC {
+        font-size: 30px;
+    }
+
+    .homeC h1 span {
+        color: #9400D3;
+        font-family: 'Shlop';
+        font-size: 40px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        font-size: 50px;
+    }
+
+    .rodape {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: -120px;
+    }
+
+    .rodapeC {
+        display: flex;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .rodapeC i {
+        margin-left: 90px;
+        font-size: 30px;
+        transition: .5s;
+    }
+
+    .rodapeC i:hover {
+        color: #FF1493;
+        transition: .5s;
+    }
+
+    .rodapeC li h4 {
+        font-size: 10px;
+    }
+
+}
+
+/*#endregion 769px - 1024px: telas pequenas, laptops */
+
+/*#region 481px - 768px: tablets */
+@media screen and (max-width: 481px) {
+    .home {
+        background-image: url('../img/fundo.png');
+        background-size: cover;
+        background-position: 10%;
+        background-attachment: fixed;
+        padding: 100px 0;
+    }
+
+    .homeC h1,
+    h2 {
+        background-color: rgba(255, 255, 255, .3);
+    }
+
+    .homeC h1 span {
+        color: #9400D3;
+        font-family: 'Shlop';
+        font-size: 40px;
+    }
+
+    .homeC h1,
+    h2 {
+        background-color: rgba(255, 255, 255, .3);
+        font-size: 25px;
+    }
+
+    .homeC h2 {
+        font-size: 20px;
+    }
+
+    .menu {
+        width: 70px;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .logo {
+        width: auto;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .menuLink span {
+        display: none;
+    }
+
+    .menuLink li {
+        margin-bottom: 20px;
+        height: 20px;
+        line-height: 40px;
+        top: 20px;
+    }
+
+    .menuLink li:hover {
+        background-color: #FF1493;
+        border-radius: 10px;
+        transition: all .5s;
+    }
+
+    .menuLink li a {
+        color: #9400D3;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .menuLink li a:hover {
+        color: #0a0113;
+        transition: all .5s;
+    }
+
+    .menuLink li a i {
+        flex-basis: 30%;
+        font-size: 20px;
+    }
+
+    .user {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .user a i {
+        width: 90%;
+        border-radius: 150px;
+        font-size: 25px;
+        padding: 80px;
+    }
+
+    .swiper {
+        width: 90%;
+        height: 90%;
+        font-size: 100px;
+        color: #9400D3;
+        font-family: 'Shlop';
+        padding: 20px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 120%;
+        height: 120%;
+        object-fit: cover;
+    }
+
+    .swiper h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .rodape {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: #FF1493;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: -120px;
+    }
+
+    .rodapeC {
+        display: flex;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .rodapeC i {
+        margin-left: 90px;
+        font-size: 20px;
+        transition: .5s;
+    }
+
+    .rodapeC i:hover {
+        color: #FF1493;
+        transition: .5s;
+    }
+
+    .rodapeC li h4 {
+        font-size: 10px;
+    }
+
+
+}
+
+/*#endregion 481px - 768px: tablets */
+
+/* #region 320px - 480px: dispositivos móveis */
+@media screen and (max-width: 320px) {
+    .home {
+        background-image: url('../img/fundo.png');
+        background-size: cover;
+        background-position: 5%;
+        background-attachment: fixed;
+        padding: 10px 0;
+    }
+
+    .homeC h1,
+    h2 {
+        background-color: rgba(255, 255, 255, .3);
+    }
+
+    .homeC h1 span {
+        color: #9400D3;
+        font-family: 'Shlop';
+        font-size: 20px;
+    }
+
+    .homeC h1,
+    h2 {
+        background-color: rgba(255, 255, 255, .3);
+        font-size: 25px;
+    }
+
+    .homeC h2 {
+        font-size: 20px;
+    }
+
+    .menu {
+        width: 70px;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .logo {
+        width: auto;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .menuLink span {
+        display: none;
+    }
+
+    .menuLink li {
+        color: #FF1493;
+        margin-bottom: 20px;
+        height: 20px;
+        line-height: 40px;
+        top: 20px;
+    }
+
+    .menuLink li:hover {
+        background-color: #9400D3;
+        border-radius: 10px;
+        transition: all .5s;
+    }
+
+    .menuLink li a {
+        color: #FF1493;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .menuLink li a:hover {
+        color: #0a0113;
+        transition: all .5s;
+    }
+
+    .menuLink li a i {
+        flex-basis: 30%;
+        font-size: 20px;
+    }
+
+    .user {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .user a i {
+        width: 90%;
+        border-radius: 150px;
+        font-size: 25px;
+        padding: 80px;
+    }
+
+    .swiper,
+    .lancamentos,
+    .serie,
+    .terror {
+        width: 120%;
+        height: 120%;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .rodape {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: #9400D3;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: -120px;
+    }
+
+    .rodapeC {
+        display: grid;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .rodapeC i {
+        margin-left: 90px;
+        font-size: 20px;
+        transition: .5s;
+    }
+
+    .rodapeC li h4 {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .rodapeC img {
+        padding-left: 100px;
+    }
+
+}
+
+/* #endregion 320px - 480px: dispositivos móveis */
