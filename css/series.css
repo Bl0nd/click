@@ -96,7 +96,7 @@
 .user a i {
     width: 110%;
     border-radius: 20px;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .user a i:hover {
@@ -114,34 +114,43 @@
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    padding: 270px;
+    padding: 150px 20px;
     font-family: 'Shlop';
     text-align: center;
+    color: #fff;
 }
 
 .home h1 {
-    font-size: 55px;
-    color:#9400D3;
-    background-color: rgba(255, 255, 255, .3);
+    font-size: 60px;
+    color: #9400D3;
+    padding: 10px 20px;
+    margin-bottom: 10px;
 }
 
 .home h2 {
-    color:#FF1493;
-    font-size: 40px;
-    background-color: rgba(255, 255, 255, .3);
+    font-size: 32px;
+    color: #FF1493;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 8px 18px;
+    display: inline-block;
+    bottom: 20px;
+    right: 30px;
 }
 
 .homeC h3 {
-    font-size: 30px;
+    font-size: 24px;
+    color: #FF1493;
+    padding: 20px 30px;
     text-align: center;
-    color:#FF1493;
-    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
 }
 
 /* btnDefault */
 .btnDefault {
     color:#4B0082;
-    font-size: 50px;
+    font-size: 30px;
     padding: 20px 40px;
     transition: .3s;
     text-align: center;
@@ -155,20 +164,19 @@
     transition: all .5s;
 }
 
-
 /* #endregion home */
 
 /*#region destaque */
 .h1 {
     padding: 30px;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .swiper {
     width: 80%;
     height: 80%;
-    font-size: 50px;
+    font-size: 30px;
     color:#9400D3;
     font-family: 'Shlop';
     padding: 300px;

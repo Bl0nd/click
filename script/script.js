@@ -31,21 +31,26 @@ function logar() {
 
     if (nome == 'admin' && senha == 'admin') {
         alert('Acertou hehehe');
-        location.href = "login.hmtl";
+        location.href = "login.html";
     } else {
         alert('Ta errado');
     }
 }
 
-// // filme
-var swiper = new Swiper(".mySwiper3", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+document.addEventListener("DOMContentLoaded", function () {
+    // Inicializa cada Swiper com classe .mySwiper3 individualmente
+    document.querySelectorAll('.mySwiper3').forEach((swiperEl) => {
+        new Swiper(swiperEl, {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: swiperEl.querySelector('.swiper-pagination'),
+                clickable: true,
+            },
+        });
+    });
 });
+
 
 //pop up
 function openForm() {

@@ -194,23 +194,11 @@
         top: 20px;
     }
 
-    .menuLink li:hover {
-        background-color: #FF1493;
-        border-radius: 10px;
-        transition: all .5s;
-    }
-
     .menuLink li a {
-        color: #9400D3;
         text-transform: capitalize;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-    }
-
-    .menuLink li a:hover {
-        color: #0a0113;
-        transition: all .5s;
     }
 
     .menuLink li a i {
@@ -231,20 +219,27 @@
         padding: 80px;
     }
 
-    .swiper {
-        width: 90%;
-        height: 90%;
-        font-size: 100px;
-        color: #9400D3;
-        font-family: 'Shlop';
-        padding: 20px;
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .swiper-slide {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     .swiper-slide img {
-        display: block;
-        width: 120%;
-        height: 120%;
-        object-fit: cover;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .swiper {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
     }
 
     .swiper h1 {
@@ -392,14 +387,26 @@
     .lancamentos,
     .serie,
     .terror {
-        width: 120%;
-        height: 120%;
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .swiper-slide {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     .swiper-slide img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
+        object-fit: contain;
     }
 
     .swiper h1 {

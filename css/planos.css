@@ -110,34 +110,97 @@ html {
 /*#endregion menu */
 
 /* #region card */
-.container h1 {
+section h1 {
     text-align: center;
     color: #9400D3;
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 60px 0 30px;
+    font-family: Arial, sans-serif;
+}
+
+.card-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
 }
 
 .card {
-    text-align: center;
-    color: #FF1493;
-    font-size: 15px;
+    background-color: #1d0230;
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 320px;
+    width: 100%;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card,
+.card-body {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.card-body[style*="#FF1493"] {
+    background-color: #FF1493 !important;
+    color: white;
+}
+
+.card-body {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-title {
+    font-size: 22px;
     font-weight: bold;
-    font-size: 20px;
+    color: #FF1493;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.card-body[style*="#FF1493"] .card-title {
+    color: white !important;
+}
+
+.card-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.card-body[style*="#FF1493"] .card-text {
+    color: white !important;
 }
 
 .btn {
-    color: #FF1493 !important;
-    font-size: 20px !important;
     background-color: #0a0113 !important;
-    border-style: none !important;
+    color: #FF1493 !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none !important;
+    margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
     background-color: #1d0230 !important;
     color: #9400D3 !important;
+    transform: scale(1.05);
+}
+
+
+.btn[style*="#111011"] {
+    background-color: #111011 !important;
+    color: #FF1493 !important;
 }
 
 /* #endregion card */
